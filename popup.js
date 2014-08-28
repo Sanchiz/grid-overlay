@@ -4,8 +4,12 @@ window.onload = function() {
         if (!this.classList.contains('active')) {
             this.classList.add('active');
             this.innerHTML = "Disable";
+
+            var select = document.getElementById("grid-type");
+            var grid_type = select.options[select.selectedIndex].value;
+
             chrome.extension.sendMessage({
-                type: "enable-grid"
+                type: "enable-grid", grid_type: grid_type
             });
         }
         else {

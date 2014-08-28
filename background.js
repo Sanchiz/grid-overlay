@@ -3,7 +3,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         case "enable-grid":
             // Send message to the content script.
             chrome.tabs.getSelected(null, function(tab){
-                chrome.tabs.sendMessage(tab.id, {type: "enable-grid", color: "#F00"});
+                chrome.tabs.sendMessage(tab.id, {type: "enable-grid", grid_type: request.grid_type});
                 // Set badge text.
                 chrome.browserAction.setBadgeText({text: "Grid"});
             });
