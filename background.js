@@ -7,6 +7,10 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
                 // Set badge text.
                 chrome.browserAction.setBadgeText({text: "Grid"});
             });
+
+            chrome.tabs.insertCSS({
+                file: 'grid.css'
+            });
         break;
 
         case "disable-grid":

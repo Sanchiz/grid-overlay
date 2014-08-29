@@ -1,0 +1,23 @@
+.grid-overlay-wrapper {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+.grid-overlay-wrapper .grid-overlay-container {
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
+    width: 800px;
+}
+
+.grid-overlay-wrapper .grid-overlay-container .grid-item {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    width: 60px;
+    float: left;
+    margin-right: 5px
+}
