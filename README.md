@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Sanchiz/grid-overlay.svg?branch=travis)](https://travis-ci.org/Sanchiz/grid-overlay)
+[![Build Status](https://travis-ci.org/Sanchiz/grid-overlay.svg?branch=master)](https://travis-ci.org/Sanchiz/grid-overlay)
