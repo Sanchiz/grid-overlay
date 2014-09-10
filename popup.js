@@ -19,5 +19,5 @@ window.onload = function() {
                 type: "disable-grid"
             });
         }
-    }
-}
+    };
+};
